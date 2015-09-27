@@ -7,7 +7,7 @@ body {
 	overflow-x: hidden; /*Fix header img overflow*/
 	font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif !important;
 }
-#wrapper {
+body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -27,6 +27,11 @@ body {
 	display: inline-block;
 	line-height: 2em;
 	font-size: 1.12em;
+}
+.section_title {
+	font-weight: 500;
+	font-size: 1.6em;
+	margin-top: 3px;
 }
 
 
@@ -84,10 +89,10 @@ body {
 /*************************************************************************************【Header style】/
 /*Header style*/
 #header {
-	overflow: hidden;
+	padding: 0 !important;
 }
 .header_img {
-	height: 35em;
+	height: 80%;
 	background: url(http://i.imgur.com/4W8HHLR.jpg);
 	background-position: center;
 	background-size: cover;
@@ -95,8 +100,118 @@ body {
 	text-align: center;
 	z-index: 1;
 	padding: 5%;
-	padding-top: 8%;
+	padding-top: 6%;
 }
 .header_img > article {
 	z-index: 2;
+}
+
+
+/*************************************************************************************【Team style】/
+/*Team style*/
+#team {
+	padding-top: 3%;
+}
+.title_wrapper {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.title_wrapper > img {
+	margin-left: -15px;
+}
+/*team member card style*/
+.team_member {
+	margin: 15px 0;
+  	padding: 0;
+}
+.team_member > figure {
+	position: relative;
+	overflow: hidden; /*hidden figcaption*/
+	padding: 0;
+	margin: 0;
+}
+.team_member > figure img {
+	min-width: 100%;
+	/*height: 20em;*/
+}
+.team_member > figure > figcaption {
+	padding: 50px;
+	color: transparent;
+	background-color: transparent;
+	position: absolute;
+	z-index: 996;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.team_member > figure > figcaption > p {
+	font-size: 16px;
+}
+.team_member > figure > figcaption > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.team_member > figure > figcaption > ul {
+	visibility: visible;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+.team_member > figure > figcaption > ul > li {
+	display: inline-block;
+	padding: 10px;	
+}
+.team_member > h4 {
+	margin: 10px 0 0;
+	padding: 0;
+	text-align: center;
+}
+.team_member > p {
+	text-align: center;
+}
+.team_member > figure:hover figcaption {
+	visibility: visible;
+	color: #fff;
+	background: rgba(230, 78, 62, 0.9);
+	/* Primary color, can be changed via colors.css */
+	height: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.team_member > figure:hover >figcaption > ul > li {
+	color: rgba(49, 49, 49, .97);
+}
+.team_member > figure > img {
+	-webkit-transform: scale(1) rotate(0) translateY(0);
+	-moz-transform: scale(1) rotate(0) translateY(0);
+	-o-transform: scale(1) rotate(0) translateY(0);
+	-ms-transform: scale(1) rotate(0) translateY(0);
+	transform: scale(1) rotate(0) translateY(0);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.team_member > figure > img:hover {
+	-webkit-transform: scale(1.2) rotate(1deg) translateY(12px);
+	-moz-transform: scale(1.2) rotate(1deg) translateY(12px);
+	-o-transform: scale(1.2) rotate(1deg) translateY(12px);
+	-ms-transform: scale(1.2) rotate(1deg) translateY(12px);
+	transform: scale(1.2) rotate(1deg) translateY(12px);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
