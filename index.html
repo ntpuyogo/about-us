@@ -22,6 +22,26 @@
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- font awesome CDN -->
+
+        <script>
+            /*
+             * When the iframe is on a different subdomain, uncomment the following line
+             * and change "example.com" to your domain.
+             */
+            // document.domain = "example.com";
+            function setIframeHeight(iframe) {
+                if (iframe) {
+                    var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                    if (iframeWin.document.body) {
+                        iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                    }
+                }
+            };
+
+            window.onload = function () {
+                setIframeHeight(document.getElementById('iframe-sheet'));
+            };
+        </script>
     </head>
     <body>
         <div class="container-fluid" id="wrapper">
@@ -70,24 +90,6 @@
                             <div class="team_member">
                                 <figure>
                                     <img src="http://i.imgur.com/FsqIhhC.png" id="yogo_btn_one" class="yogo_btn" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                                    <img src="http://i.imgsafe.org/6a5b608.jpg" class="img-responsive member_img">
-                                    <figcaption>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
-                                        <ul>
-                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-                                            <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-                                            <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
-                                        </ul>
-                                    </figcaption>
-                                </figure>
-                                <h4>鄭硯融</h4>
-                                <p>Member's status</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="team_member">
-                                <figure>
-                                    <img src="http://i.imgur.com/FsqIhhC.png" id="yogo_btn_two" class="yogo_btn" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                                     <img src="http://i.imgsafe.org/6c94c4f.jpg" class="img-responsive member_img">
                                     <figcaption>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
@@ -105,7 +107,7 @@
                         <div class="col-md-4">
                             <div class="team_member">
                                 <figure>
-                                    <img src="http://i.imgur.com/FsqIhhC.png" id="yogo_btn_three" class="yogo_btn" data-toggle="popover" data-placement="right" data-content="期待人們藉由揪團，讓生活更美好">
+                                    <img src="http://i.imgur.com/FsqIhhC.png" id="yogo_btn_two" class="yogo_btn" data-toggle="popover" data-placement="right" data-content="期待人們藉由揪團，讓生活更美好">
                                     <img src="http://i.imgsafe.org/6f46db5.jpg" class="img-responsive member_img">
                                     <figcaption>
                                         <p>
@@ -135,6 +137,24 @@
                                 <p>Co-founder / Developer</p>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="team_member">
+                                <figure>
+                                    <img src="http://i.imgur.com/FsqIhhC.png" id="yogo_btn_three" class="yogo_btn" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    <img src="http://i.imgsafe.org/6a5b608.jpg" class="img-responsive member_img">
+                                    <figcaption>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                                <h4>鄭硯融</h4>
+                                <p>Member's status</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
@@ -151,7 +171,7 @@
                                         </ul>
                                     </figcaption>
                                 </figure>
-                                <h4>鄒伯軒</h4>
+                                <h4>鄒柏軒</h4>
                                 <p>Member's status</p>
                             </div>
                         </div>
@@ -200,6 +220,16 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="sheet" class="col-md-6 col-md-offset-3 col-sm-12">
+                    <div class="row"></div>
+                    <div class="title_wrapper">
+                        <img src="http://i.imgur.com/lsICe2F.jpg">
+                        <h3 class="section_title">加入 YOGO 團隊</h3>
+                    </div>
+                    <form>
+                        <iframe src="http://goo.gl/forms/itcmSuPLfJ" class="i_sheet" id="iframe-sheet"></iframe>
+                    </form>
                 </div>
             </div>
         </div>
