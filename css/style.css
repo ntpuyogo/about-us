@@ -140,6 +140,7 @@ body {
 	overflow: hidden; /*hidden figcaption*/
 	padding: 0;
 	margin: 0;
+	border-radius: 5px;
 }
 .team_member > figure > .yogo_btn {
 	position: absolute;
@@ -181,7 +182,10 @@ body {
 	transition: 0.3s;
 }
 .team_member > figure .member_img {
-	min-width: 100%;
+	/*width: 200px;
+	height: 200px;
+	border: 1px solid rgba(50,50,50,0.1);
+	border-radius: 50%;*/
 }
 .team_member > figure > figcaption {
 	padding: 50px;
@@ -228,10 +232,10 @@ body {
 	padding: 0;
 	text-align: center;
 }
-.team_member > p {
+.team_member > a {
 	text-align: center;
 }
-.team_member > figure:hover figcaption {
+/*.team_member > figure:hover figcaption {
 	visibility: visible;
 	color: #fff;
 	background: rgba(50,50,50,0.1);
@@ -244,7 +248,7 @@ body {
 .team_member > figure:hover >figcaption > ul > li {
 	color: rgba(49, 49, 49, .97);
 }
-/*.team_member > figure > .member_img {
+.team_member > figure > .member_img {
 	-webkit-transform: scale(1) rotate(0) translateY(0);
 	-moz-transform: scale(1) rotate(0) translateY(0);
 	-o-transform: scale(1) rotate(0) translateY(0);
@@ -314,3 +318,31 @@ body {
     color: rgba(52,90,13,1);
     text-decoration: none;
 }
+
+/*************************************************************************************【Footer Hire】*/
+.panel-body  {
+	text-align: center;
+		font-size: 1.8em;
+}
+.panel-footer {
+	min-height: 5em;
+	line-height: 24px;
+}
+#hire {
+	margin: 0 auto;
+	text-align: center;
+	padding: 5%;
+	padding-right: 8%;
+	padding-left: 8%;
+	display: block;
+	color: white;
+	background-color: #76CC1E;
+	border-radius: 3px;
+	margin:5%;
+}
+#hire:hover {
+	text-decoration: none;
+	color: white;
+	opacity: 0.9;
+}
+	
