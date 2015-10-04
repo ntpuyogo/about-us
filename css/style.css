@@ -343,7 +343,7 @@ body {
 	border-radius: 1px;
 	border: 0;
 	margin: 3%;
-	padding: 1%;
+	padding: 2%;
 	border: 1px solid #76CC1E;
 	display: block;
 }
@@ -354,7 +354,7 @@ body {
 	width: 40%;
 }
 #mail_content {
-	width: 70%;
+	width: 90%;
 	height: 5em;
 }
 #mail_submit {
