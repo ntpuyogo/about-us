@@ -334,10 +334,40 @@ body {
 
 /*************************************************************************************【contact】*/
 #contact_sheet {
-	border-radius: 3px;
-	border: 1px solid rgba(50,50,50,0.1);
-	background-color: rgba(118, 204, 30, 0.8);
+	border-radius: 5px;
+	background-color: rgba(50,50,50,0.1);
 	padding: 5%;
+	margin-top: 3%;
+}
+#mail_name, #mail_address, #mail_content {
+	border-radius: 1px;
+	border: 0;
+	margin: 3%;
+	padding: 1%;
+	border: 1px solid #76CC1E;
+	display: block;
+}
+#mail_name{
+	width: 20%;
+}
+#mail_address {
+	width: 40%;
+}
+#mail_content {
+	width: 70%;
+	height: 5em;
+}
+#mail_submit {
+	background: #76CC1E;
+	border: 0;
+	padding: 3% 5%;
+	color: white;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+#mail_submit:hover {
+	opacity: 0.9;
+	box-shadow: 1px 1px 1px rgba(50,50,50,0.1);
 }
 
 
