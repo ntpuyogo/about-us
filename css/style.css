@@ -99,7 +99,7 @@ body {
 }
 .header_img {
 	height: 80%;
-	background: url(http://i.imgur.com/4W8HHLR.jpg);
+	background: url(http://placehold.it/350x150);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat; 
@@ -234,7 +234,7 @@ body {
 .team_member > figure:hover figcaption {
 	visibility: visible;
 	color: #fff;
-	background: rgba(118,204,30,0.8);
+	background: rgba(50,50,50,0.1);
 	height: 100%;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -244,7 +244,7 @@ body {
 .team_member > figure:hover >figcaption > ul > li {
 	color: rgba(49, 49, 49, .97);
 }
-.team_member > figure > .member_img {
+/*.team_member > figure > .member_img {
 	-webkit-transform: scale(1) rotate(0) translateY(0);
 	-moz-transform: scale(1) rotate(0) translateY(0);
 	-o-transform: scale(1) rotate(0) translateY(0);
@@ -265,7 +265,7 @@ body {
 	-moz-transition: all 0.6s ease-in-out;
 	-o-transition: all 0.6s ease-in-out;
 	transition: all 0.6s ease-in-out;
-}
+}*/
 
 
 
