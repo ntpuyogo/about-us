@@ -98,8 +98,8 @@ body {
 	padding: 0 !important;
 }
 .header_img {
-	height: 80%;
-	background: url(http://placehold.it/350x150);
+	width: 100%;
+	background: url(http://i.imgur.com/2L0jKxV.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat; 
@@ -182,10 +182,8 @@ body {
 	transition: 0.3s;
 }
 .team_member > figure .member_img {
-	/*width: 200px;
-	height: 200px;
-	border: 1px solid rgba(50,50,50,0.1);
-	border-radius: 50%;*/
+	width: 100%;
+	height: auto;
 }
 .team_member > figure > figcaption {
 	padding: 50px;
