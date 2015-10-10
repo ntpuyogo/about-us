@@ -23,25 +23,20 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- font awesome CDN -->
 
-        <script>
-            /*
-             * When the iframe is on a different subdomain, uncomment the following line
-             * and change "example.com" to your domain.
-             */
-            // document.domain = "example.com";
-            function setIframeHeight(iframe) {
-                if (iframe) {
-                    var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-                    if (iframeWin.document.body) {
-                        iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-                    }
-                }
-            };
+        <script> //css onlick event for email anim
+        $(document).ready(function(){
+            $("#man").click(function(){
+                $("#man_area").addClass("outline");
+            });
+        });
 
-            window.onload = function () {
-                setIframeHeight(document.getElementById('iframe-sheet'));
-            };
+        $(document).ready(function(){
+            $("#woman").click(function(){
+                $("#woman_area").addClass("outline");
+            });
+        });
         </script>
+
     </head>
     <body>
         <div class="container-fluid" id="wrapper">
@@ -70,10 +65,10 @@
                             </h2>
                             <p>
                                 <span class="text_text header_text">揪團的過程創造了人與人連結，滿足人們購物的慾望，更加深了人與人的情感</span>
-                            </p>
+                            </p><!-- 
                             <p>
                                 <span class="text_title header_text">YOGO團隊誕生於臺北大學，自2015 / 1 YOGO的IDEA開始萌芽</span>
-                            </p>
+                            </p> -->
                             <p>
                                 <span class="text_title header_text">YOGO目標讓每個人用更簡便、更有趣的方式揪團，期望各種有趣的事物都能藉由揪團串聯起來，讓揪團變成New Life Style</span>
                             </p>
@@ -159,8 +154,8 @@
                         <div class="col-md-4">
                             <div class="team_member">
                                 <figure>
-                                    <span class="join_btn"><i class="fa fa-user-plus"></i></span>
-                                    <img src="http://i.imgsafe.org/6c94c4f.jpg" class="img-responsive member_img">
+                                    <img src="http://i.imgur.com/FsqIhhC.png" class="yogo_btn" id="man">
+                                    <img src="http://i.imgsafe.org/6f46db5.jpg" class="img-responsive member_img">
                                     <figcaption>
                                         <p>
                                             <span class="card_text">【夥伴招募】</span>
@@ -181,8 +176,8 @@
                         <div class="col-md-4">
                             <div class="team_member">
                                 <figure>
-                                    <span class="join_btn"><i class="fa fa-user-plus"></i></span>
-                                    <img src="http://i.imgsafe.org/6f46db5.jpg" class="img-responsive member_img">
+                                    <img src="http://i.imgur.com/FsqIhhC.png" class="yogo_btn" id="woman">
+                                    <img src="http://i.imgsafe.org/6c94c4f.jpg" class="img-responsive member_img">
                                     <figcaption>
                                         <p>
                                             <span class="card_text">【夥伴招募】</span>
@@ -212,30 +207,30 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="panel panel-primary">
+                            <div class="panel panel-primary" id="man_area">
                               <div class="panel-body">
                                 後端工程師
                               </div>
                               <div class="panel-footer">
                                 <ul>
+                                    <li>熟悉php, ROR, mysql 其他後端開發語言</li>
                                     <li>重視使用者體驗</li>
-                                    <li>熟悉php, ROR, mysql</li>
-                                    <li>善團隊合作</li>
+                                    <li>團隊合作與溝通</li>
                                 </ul>
                                 <a href="#" id="hire">我有興趣</a>
                               </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="panel panel-primary">
+                            <div class="panel panel-primary" id="woman_area">
                               <div class="panel-body">
                                 社群經理
                               </div>
                               <div class="panel-footer">
                                 <ul>
-                                    <li>人漂亮</li>
-                                    <li>160公分以上</li>
-                                    <li>正妹</li>
+                                    <li>熟悉GA,Facebook後臺,Google Ads數據分析</li>
+                                    <li>活動發想與執行</li>
+                                    <li>團隊合作與溝通</li>
                                 </ul>
                                 <a href="#" id="hire">我有興趣</a>
                               </div>
@@ -244,8 +239,7 @@
                     </div>
                 </div>
                 <div id="contact" class="col-md-12 col-sm-12">
-                    <div class="title_wrapper">
-                        <img src="http://i.imgur.com/lsICe2F.jpg">
+                    <div class="title_wrapper" style="margin-top:-1%;">
                         <h3 class="section_title">聯絡我們</h3>
                         <div class="container">
                             <div class="row">
