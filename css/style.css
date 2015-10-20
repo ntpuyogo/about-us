@@ -107,6 +107,7 @@ body {
 	z-index: 1;
 	padding: 5%;
 	padding-top: 6%;
+	opacity: 0.9;
 }
 .header_img > article {
 	z-index: 2;
